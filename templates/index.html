@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fire predictor</title>
+    <link rel="stylesheet" href="../static/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+      .button{
+        outline: none;
+        border: none;
+        padding: 5px 30px;
+        border-radius: 5px;
+        color: white;
+        background: #D46731;
+      }
+    </style>
+  </head>
+  <body>
+
+    <section>
+      <input type="checkbox" id="check">
+      <header>
+        <img src="../static/images/logo1.png" height="90px" width="90px" alt="FireP">
+        <div class="navigation">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="/register">signup</a>
+          <a href="/login">login</a>
+        </div>
+        <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn"></i>
+        </label>
+      </header>
+      <div class="content" style="margin-top: 8%;">
+        <div class="info">
+          <h2 style="color:rgb(207, 76, 35);">Forest Fire Prediction<br><span></span></h2>
+          <p> There are several ways to develop a forest fire prediction system using machine learning.
+            One approach is to collect data on various environmental factors that contribute to forest fires, such as temperature, humidity, wind speed and direction,
+            and vegetation moisture content. This data can then be used to train a machine learning model to predict the likelihood of a forest fire occurring in a given area.</p>
+            <a href='#about' class="button">More info</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 style="color:rgb(207, 76, 35);">About Forest fire predictor</h2><br><br>
+      <p class="about-content" style="text-align: center; color:white;">
+        The forest fire is predicted based on the Temperature and Humidity. This dataset is prepared using the previously occured forest fires in the world.<br>
+        Using Data Science and Machine learning, we can build a model that takes in the detected fires dataset learns and detects future fires based on certain Weather report.<br>
+        the machine learning model has been trained using Logistic Regression Classifier with 91% accuracy. And the model has been connected to the website using the Python Flask Framework.<br>
+        Sklearn for pre-processing and Model Building<br>
+        Pandas, Numpy, Matplotlib for csv reading, Data Processing, Data Cleaning, Visualization etc.<br>
+      </p>
+      <br><br><br><br>
+      <!-- <p class="copyright" style="color:aqua; text-align:center; font-style:italic">&copy;by Ripunjay Choudhury</p> -->
+    </section>
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Account</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<style>
+    .banner{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../static/images/p2.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      }
+      button{
+  width: 100px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 2px solid #D46731;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span{
+  background: #D46731;
+  height: 100%;
+  width: 0;
+  border-radius: 7px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover span{
+  border: none;
+}
+
+    /* .content h1{
+        color: aqua;
+        font-weight: bolder;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    } */
+    .content{
+        width: 100%;
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color:#fff;
+     }
+      .content h1{
+          font-size: 40px;
+          color:firebrick;
+      }
+      /* .content p{
+        color:firebrick;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px ;
+      } */
+  </style>              
+</head>
+<body>
+<div class="banner">
+    <div class="content">
+        <h1>Starting with Forest Fire prediction</h1>
+            <div>
+              <form action='/predict' method='post'>
+                <a href='/predict'><button type="submit"><span></span>START</button></a>
+                <a href='/logout'><button type="button"><span></span>LOGOUT</button></a>
+              </form>
+	        </div>
+</div>
+</body>
+</html>
