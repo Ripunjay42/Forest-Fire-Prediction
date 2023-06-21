@@ -12,5 +12,6 @@
 
 #DEMO:-(# web url #)
 
+   https://forestfireprediction-rip.onrender.com
    
 
